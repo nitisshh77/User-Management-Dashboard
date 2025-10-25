@@ -1,0 +1,39 @@
+*{
+   margin:0%;
+   padding:0%;
+   box-sizing: border-box;
+}
+
+html,body{
+   height: 100%;
+   width: 100%
+}
+.user{
+   margin-left: 5rem;
+   padding: 2rem;
+}
+.user h1{
+   padding-left: 1.2rem;
+}
+.text{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.group{
+   padding: 0.7rem 1rem;
+}
+.group{
+   width: 28rem;
+}
+.btn{
+   background-color: rgba(220, 213, 213, 0.439);
+}
+.btn:hover{
+   background-color: rgba(183, 178, 178, 0.544);
+}
+.user-list{
+   height: 35vw;
+   width: 100%;
+}

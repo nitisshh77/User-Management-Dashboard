@@ -1,0 +1,47 @@
+*{
+   margin:0%;
+   padding:0%;
+   box-sizing: border-box;
+}
+
+html,body{
+   height: 100%;
+   width: 100%
+}
+
+.details-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+}
+
+.details-container h1 {
+  font-size: 28px;
+  color: #1976d2;
+  margin-bottom: 16px;
+}
+
+.details-card p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.back-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: #115293;
+}

@@ -1,0 +1,129 @@
+*{
+   margin:0%;
+   padding:0%;
+   box-sizing: border-box;
+}
+
+html,body{
+   height: 100%;
+   width: 100%
+}
+
+.btndiv{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.btn{
+   width: 12vw;
+   font-size: 1rem;
+   margin-bottom: 2rem;
+   padding: 1rem 5rem;
+   
+}
+
+.mui-table-container {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin: 2rem auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+
+.mui-table-header {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr 1.2fr 1.2fr 0.8fr;
+  background-color: #1976d2;
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+}
+
+
+.mui-table-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr 1.2fr 1.2fr 0.8fr;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.mui-table-row:hover {
+  background-color: #e3f2fd;
+  transform: scale(1.01);
+}
+
+
+.delete-btn {
+  background-color: rgba(183, 178, 178, 0.544);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+  color: white;
+}
+
+
+@media (max-width: 900px) {
+  .mui-table-header {
+    display: none;
+  }
+
+  .mui-table-row {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .mui-table-row span {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  .mui-table-row span::before {
+    content: attr(data-label);
+    font-weight: 600;
+    display: inline-block;
+    width: 100px;
+    color: #1976d2;
+  }
+
+  .btndiv {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mui-table-row {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
